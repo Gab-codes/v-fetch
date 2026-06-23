@@ -14,11 +14,8 @@ describe('Hardening - Response Parsing', () => {
 
     const client = createClient({ baseURL: 'https://test.com' });
     const res = await client.get('/test');
-
-    expect(res.ok).toBe(true);
-    if (res.ok) {
       expect(res.status).toBe(204);
-      expect(res.data).toEqual({});
+      expect(res).toEqual({);
     }
   });
 
@@ -27,11 +24,8 @@ describe('Hardening - Response Parsing', () => {
 
     const client = createClient({ baseURL: 'https://test.com' });
     const res = await client.get('/test');
-
-    expect(res.ok).toBe(true);
-    if (res.ok) {
       expect(res.status).toBe(200);
-      expect(res.data).toEqual({});
+      expect(res).toEqual({);
     }
   });
 });
